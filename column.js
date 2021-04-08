@@ -1,6 +1,6 @@
 export class Column {
   constructor() {
-    this.tokens = [0, 0, 0, 0, 0, 0];
+    this.tokens = [null, null, null, null, null, null];
   }
 
   add(playerNum) {
@@ -13,6 +13,7 @@ export class Column {
   }
 
   isFull() {
+    //console.log(Boolean(this.tokens[0]))
     return Boolean(this.tokens[0]);
   }
 

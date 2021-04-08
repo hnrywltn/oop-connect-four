@@ -40,11 +40,11 @@ function updateUI() {
     gameName.innerHTML = game.getName();
   }
   if(game.currentPlayer === 1) {
-    clickTargets.classList.remove("black");
-    clickTargets.classList.add("red");
-  } else {
     clickTargets.classList.remove("red");
     clickTargets.classList.add("black");
+  } else {
+    clickTargets.classList.remove("black");
+    clickTargets.classList.add("red");
   }
 };
 
@@ -97,11 +97,6 @@ window.addEventListener("DOMContentLoaded", () => {
     newGameBttn.disabled = true;
     updateUI();
   });
-
-
-
-
-
 
 
   });
